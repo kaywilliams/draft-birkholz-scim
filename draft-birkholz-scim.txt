@@ -9,7 +9,7 @@ Expires: 30 December 2021
 
 
                    Supply Chain Integrity Management
-                       draft-birkholz-scim-later
+                       draft-birkholz-scim-latest
 
 Abstract
 
