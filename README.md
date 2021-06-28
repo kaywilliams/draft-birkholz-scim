@@ -1,10 +1,10 @@
-# RATS Supply Chain Integrity Management
+# Supply Chain Integrity Management (SCIM)
 
 This is the working area for the individual Internet-Draft, "RATS Supply Chain Integrity Management".
 
-* [Editor's Copy](https://ietf-rats.github.io/draft-birkholz-rats-supply-chain-integrity-management/#go.draft-birkholz-rats-supply-chain-integrity-management.html)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-birkholz-rats-supply-chain-integrity-management)
-* [Compare Editor's Copy to Individual Draft](https://ietf-rats.github.io/draft-birkholz-rats-supply-chain-integrity-management/#go.draft-birkholz-rats-supply-chain-integrity-management.diff)
+* [Editor's Copy](https://ietf-rats.github.io/draft-birkholz-scim/#go.draft-birkholz-scim.html)
+* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-birkholz-scim)
+* [Compare Editor's Copy to Individual Draft](https://ietf-rats.github.io/draft-birkholz-scim/#go.draft-birkholz-scim.diff)
 
 ## Building the Draft
 
@@ -21,4 +21,4 @@ This requires that you have the necessary software installed.  See
 ## Contributing
 
 See the
-[guidelines for contributions](https://github.com/ietf-rats/draft-birkholz-rats-supply-chain-integrity-management/blob/main/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/ietf-rats/draft-birkholz-scim/blob/main/CONTRIBUTING.md).
