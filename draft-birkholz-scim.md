@@ -1,7 +1,7 @@
 ---
-title: RATS Supply Chain Integrity Management
+title: Supply Chain Integrity Management
 abbrev: RAST SCIM
-docname: draft-birkholz-rats-supply-chain-integrity-management-latest
+docname: draft-birkholz-scim-later
 stand_alone: true
 ipr: trust200902
 area: Security
