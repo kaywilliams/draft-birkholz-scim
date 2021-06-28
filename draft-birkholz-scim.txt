@@ -8,8 +8,8 @@ Intended status: Standards Track                            28 June 2021
 Expires: 30 December 2021
 
 
-                 RATS Supply Chain Integrity Management
-      draft-birkholz-rats-supply-chain-integrity-management-latest
+                   Supply Chain Integrity Management
+                       draft-birkholz-scim-later
 
 Abstract
 
