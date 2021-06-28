@@ -1,7 +1,7 @@
 ---
 title: Supply Chain Integrity Management
-abbrev: RAST SCIM
-docname: draft-birkholz-scim-later
+abbrev: SCIM
+docname: draft-birkholz-scim-latest
 stand_alone: true
 ipr: trust200902
 area: Security
