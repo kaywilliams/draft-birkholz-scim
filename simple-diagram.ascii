@@ -1,0 +1,6 @@
+ .----------------------.                   .----------------------.
+| SoftwareAgent         |                  | Message                |
+| SBOM Assertion-Set    |    generates     | SBOM Assertion Set     |
+|      Generator        |----------------->|                        |
+| RATS Claims Generator |                  | RATS Claim             |
+ '---------------------'                    '----------------------'

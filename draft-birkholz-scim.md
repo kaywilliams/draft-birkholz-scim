@@ -43,12 +43,16 @@ Introduction
 
 ## Requirements Notation
 
-{::boilerplate bcp14}
+{::boilerplate bcp14-tagged}
 
 {: #mybody}
-# Body
+# SCIM
 
-Body
+# A mapping of SCIM and RATS
+
+~~~~ goat
+{::include simple-diagram.ascii}
+~~~~
 
 # CDDL
 
@@ -56,7 +60,7 @@ See {{-coswid}}.
 
 ~~~~ CDDL
 <CODE BEGINS>
-;{::include corim.cddl}
+;{::include some.cddl}
 <CODE ENDS>
 ~~~~
 
