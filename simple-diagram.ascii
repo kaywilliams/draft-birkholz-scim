@@ -1,6 +1,51 @@
- .----------------------.                   .----------------------.
-| SoftwareAgent         |                  | Message                |
-| SBOM Assertion-Set    |    generates     | SBOM Assertion Set     |
-|      Generator        |----------------->|                        |
-| RATS Claims Generator |                  | RATS Claim             |
- '---------------------'                    '----------------------'
+ .---------------------.                    .---------------------.
+| SoftwareAgent:        |                  | Message:              |
+| SBOM Assertion-Set    |    generates     | SBOM Assertion Set    |
+|      Generator        +----------------->|                       |
+| RATS Claims Generator |                  | RATS Claim            |
+ '---------------------'                    '---------------------'
+            ^                                          ^
+            | owns                                     | consumes
+            |                                          |
+ .----------+----------.                    .----------+----------.
+| Agent:                |                  | SoftwareAgent:        |
+| SBOM Issuer           |   generates +    | SBOM Header Adder &   |
+|                       +----------------->|      Signer           |
+| RATS RP Owner         |  header-claims   | RATS Claim Collector  |
+ '----------+----------'                    '----------+----------'
+            |                                          |
+            | owns                                     | generates
+            v                                          v
+ .---------------------.                    .---------------------.
+| SoftwareAgent:        |                  | Message:              |
+| SBOM ReceiptRequester |     consumes     | (COSE) Signed SBOM    |
+| RATS Attester         +----------------->|        Claims Set     |
+| RATS Relying Party    |                  | RATS Claim            |
+ '----------+-----+----'                    '---------------------'
+            |     |                    
+            |      '----------------.                  
+            v generates              | consumes          
+ .---------------------.             |      .---------------------.
+| Message:              |            |     | Message:              |
+| SBOM ReceiptRequest   |             '--->| SBOM Receipt          |
+|                       |             .--->| RATS AR-augmented     |
+| RATS Evidence         |            |     | Evidence              |
+ '----------+----------'             |      '---------------------'
+            ^ consumes               | generates        
+            |      .----------------'                  
+            |     |
+ .----------+-----+----.                    .---------------------.
+| SoftwareAgent:        |                  | Agent:                |
+| SBOM Ledger Service   |     consumes     | SBOM Ledger Authority |
+|                       +----------------->|                       |
+| RATS Endorsed Verifier|                  | RATS Verifier Owner   |
+ '----------+----------'                    '----------+----------'
+            |                                          |
+            | generates                                | owns      
+            v                                          v
+ .---------------------.                    .---------------------.
+| Messages:             |                  | SoftwareAgent:        |
+| Receipt Ledger        |     consumes     | "Store"               |
+|                       |<-----------------|                       |
+| RATS Evidence         |                  | RATS Verifier         |
+ '---------------------'                    '---------------------'
